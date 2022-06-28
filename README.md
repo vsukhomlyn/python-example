@@ -1,9 +1,10 @@
 # Install
 
 - clone repository with `git clone`
-- run `python3 -m venv venv`
+- change directory by `cd python-example`
+- run `python3 -m venv venv` to create virtualenv
 - activate virtualenv with `source venv/bin/activate`
-- run `pip install -r requirements.txt`
+- run `pip install -r requirements.txt` 
 
 # Tests
 
