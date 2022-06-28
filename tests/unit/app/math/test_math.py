@@ -15,5 +15,9 @@ def test_plus(first: int, second: int, answer: int):
 
 
 def test_plus_exception():
-    with pytest.raises(Exception):
+    with pytest.raises(TypeError):
         plus(10, 's')
+    with pytest.raises(TypeError):
+        plus('asd', 2)
+    with pytest.raises(TypeError):
+        plus(10.2, 2)
