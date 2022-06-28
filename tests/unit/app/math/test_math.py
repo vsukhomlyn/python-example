@@ -1,5 +1,4 @@
 import pytest
-from unittest.mock import Mock
 from app.math.math import plus
 
 
@@ -16,6 +15,5 @@ def test_plus(first: int, second: int, answer: int):
 
 
 def test_plus_exception():
-    m = Mock()
     with pytest.raises(Exception):
         plus(10, 's')
